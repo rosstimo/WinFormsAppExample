@@ -17,4 +17,8 @@
         'Me.Hide()
     End Sub
 
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles Me.Load
+        'Me.Hide()
+        SplashScreenForm.Show()
+    End Sub
 End Class
