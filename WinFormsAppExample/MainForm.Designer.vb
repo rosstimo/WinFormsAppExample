@@ -32,6 +32,7 @@ Partial Class MainForm
         ContextMenuStrip = New ContextMenuStrip(components)
         HelpContextMenuItem = New ToolStripMenuItem()
         AboutContextMenuItem = New ToolStripMenuItem()
+        ExitContextMenuItem = New ToolStripMenuItem()
         GroupBox = New GroupBox()
         MenuStrip.SuspendLayout()
         ContextMenuStrip.SuspendLayout()
@@ -80,15 +81,15 @@ Partial Class MainForm
         ' AboutTopMenuItem
         ' 
         AboutTopMenuItem.Name = "AboutTopMenuItem"
-        AboutTopMenuItem.Size = New Size(164, 34)
+        AboutTopMenuItem.Size = New Size(270, 34)
         AboutTopMenuItem.Text = "&About"
         ' 
         ' ContextMenuStrip
         ' 
         ContextMenuStrip.ImageScalingSize = New Size(24, 24)
-        ContextMenuStrip.Items.AddRange(New ToolStripItem() {HelpContextMenuItem, AboutContextMenuItem})
+        ContextMenuStrip.Items.AddRange(New ToolStripItem() {HelpContextMenuItem, AboutContextMenuItem, ExitContextMenuItem})
         ContextMenuStrip.Name = "ContextMenuStrip"
-        ContextMenuStrip.Size = New Size(135, 68)
+        ContextMenuStrip.Size = New Size(135, 100)
         ' 
         ' HelpContextMenuItem
         ' 
@@ -101,6 +102,12 @@ Partial Class MainForm
         AboutContextMenuItem.Name = "AboutContextMenuItem"
         AboutContextMenuItem.Size = New Size(134, 32)
         AboutContextMenuItem.Text = "About"
+        ' 
+        ' ExitContextMenuItem
+        ' 
+        ExitContextMenuItem.Name = "ExitContextMenuItem"
+        ExitContextMenuItem.Size = New Size(134, 32)
+        ExitContextMenuItem.Text = "Exit"
         ' 
         ' GroupBox
         ' 
@@ -117,7 +124,6 @@ Partial Class MainForm
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1143, 718)
-        ContextMenuStrip = ContextMenuStrip
         Controls.Add(GroupBox)
         Controls.Add(ExitButton)
         Controls.Add(MenuStrip)
@@ -142,4 +148,5 @@ Partial Class MainForm
     Friend WithEvents HelpContextMenuItem As ToolStripMenuItem
     Friend WithEvents AboutContextMenuItem As ToolStripMenuItem
     Friend WithEvents GroupBox As GroupBox
+    Friend WithEvents ExitContextMenuItem As ToolStripMenuItem
 End Class

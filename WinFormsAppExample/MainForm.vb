@@ -1,5 +1,6 @@
 ﻿Public Class MainForm
-    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, ExitTopMenuItem.Click, ExitContextMenuItem.Click
+
         SplashScreenForm.Close()
         Me.Close()
     End Sub
@@ -10,4 +11,10 @@
         'SplashScreenForm.Show()
         'Me.Hide()
     End Sub
+
+    Private Sub AboutMenuItem_Click(sender As Object, e As EventArgs) Handles AboutTopMenuItem.Click
+        AboutForm.Show()
+        'Me.Hide()
+    End Sub
+
 End Class
