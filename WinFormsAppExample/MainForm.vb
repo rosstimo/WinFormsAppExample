@@ -6,7 +6,7 @@
 
 
 
-    Private Sub MainForm_Click(sender As Object, e As EventArgs) Handles Me.Click
+    Private Sub MainForm_Click(sender As Object, e As EventArgs) Handles MyBase.Click
         'SplashScreenForm.Show()
         'Me.Hide()
     End Sub
