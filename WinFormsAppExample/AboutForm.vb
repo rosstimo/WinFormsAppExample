@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub OKButton_Click(sender As Object, e As EventArgs) Handles OKButton.Click
-        MainForm.Hide()
+        MainForm.Show()
         Me.Close()
     End Sub
 End Class
